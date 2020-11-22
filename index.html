@@ -44,7 +44,7 @@
 
   <main>
     <!-- Герой -->
-     <section class="hero">
+    <section class="hero">
       <div class="container">
         <h1 class="hero-title">Эффективные решения<br /> для вашего бизнеса</h1>
         <button href="" class="btn main" data-modal-open>Заказать услугу</button>
@@ -274,13 +274,66 @@
             </svg></a></li>
       </ul>
       </div>
+       <div class="subscription-container"> 
+        <form>
+          <p class="subscription-title">Подпишитесь на рассылку</p>
+          <input type="email" name="mail" id="mail" placeholder="E-mail" />
+          <button class="subscription" type="submit">Подписаться
+            <svg class="subscription-icon">
+            <use href="./images/sprite.svg#icon-subscribe-1" />
+          </svg></button>
+        </form>
+      </div>
     </div>
   </footer>
-   <div class="backdrop is-hidden" data-modal>
-    <class class="modal">
+      <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
       <button class="btn-close" data-modal-close></button>
-  </div>
-  <script src="./js/modal.js"></script>
-</body>
+     <form class="modal-form">
+    <b class="form-title">Оставьте свои данные, мы вам перезвоним</b>
+    <div class="form-field">
+               <div class="form-field">
+        <label for="name">Имя</label>
+        <input
+          type="text"
+          name="name"
+          id="name" class="name"/>
+          <svg class="name-img">
+           <use href="./images/sprite.svg#icon-name-1"/></svg>
+        </div>
+              <div class="form-field">
+        <label for="tel">Телефон</label>
+        <input type="tel" name="tel" id="tel" class="tel" />
+        <svg class="tel-img">
+          <use href="./images/sprite.svg#icon-tel-1" />
+        </svg>
+      </div>
+      <div class="form-field">
+        <label for="mail">Почта</label>
+        <input type="email" name="mail" id="mail" class="mail"
+          />
+          <svg class="mail-img">
+          <use href="./images/sprite.svg#icon-mail-1" />
+        </svg>
+      </div>
+      <div class="form-field">
+        <label for="comment">Комментарий</label>
+        <textarea name="comment" id="comment" placeholder="Введите текст"></textarea>
+      </div>
+       <div class="checkbox-field">
+        <label for="license" class="checkbox-label">
+          <input type="checkbox" name="license" id="license" value="agree" class="checkbox-input">
+          <span class="checkbox-icon"></span>Соглашаюсь с рассылкой и принимаю <a href="" class="license-accent">Условия
+            договора</a>
+        </label>
+      </div>
+         <div class="submit">
+        <button class="submit-btn" type="submit">Отправить</button>
+     </div>
+      </form>
+    </div>
+    </div>
+      <script src="./js/modal.js"></script>
+       </body>
 
 </html>
