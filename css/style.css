@@ -675,10 +675,12 @@ header ul a:focus {
   height: 50px;
   border-radius: 4px;
   cursor: pointer;
+  fill: var(--white);
 }
 .subscription-icon {
   width: 24px;
   height: 24px;
+  margin-left: 10px;
 }
 .portfolio {
   padding-top: 94px;
