@@ -651,6 +651,9 @@ header ul a:focus {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   margin-top: 20px;
+  font-size: 16px;
+  line-height: 1, 25px;
+  color: rgba(255, 255, 255, 0.6);
 }
 .subscription-container input::placeholder {
   padding: 16px 15px;
@@ -675,7 +678,6 @@ header ul a:focus {
   height: 50px;
   border-radius: 4px;
   cursor: pointer;
-  fill: var(--white);
 }
 .subscription-icon {
   width: 24px;
